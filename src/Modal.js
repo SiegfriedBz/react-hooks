@@ -1,4 +1,5 @@
 import React, { useRef, forwardRef, useImperativeHandle } from "react";
+import "./Modal.css";
 
 const Modal = ({ isOpen, handleClose }, ref) => {
   const btnCloseRef = useRef();
@@ -24,14 +25,19 @@ const Modal = ({ isOpen, handleClose }, ref) => {
   return (
     <div>
       <h1>Confirmation Modal</h1>
-      <button id="btnClose" ref={btnCloseRef} onClick={handleClose}>
+      <button
+        id="btnClose"
+        className="modal-btn"
+        ref={btnCloseRef}
+        onClick={handleClose}
+      >
         Close
       </button>
       <h6>Are you sure you want to confirm this?</h6>
-      <button id="btnYes" ref={btnYesRef}>
+      <button id="btnYes" className="modal-btn" ref={btnYesRef}>
         Yes
       </button>
-      <button id="btnNo" ref={btnNoRef}>
+      <button id="btnNo" className="modal-btn" ref={btnNoRef}>
         No
       </button>
     </div>

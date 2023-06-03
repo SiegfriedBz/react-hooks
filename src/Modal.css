@@ -1,7 +1,3 @@
-.App {
-  text-align: center;
-}
-
 .modal-btn {
   padding: 8px;
 }
@@ -19,6 +15,5 @@
 }
 
 #btnNo {
-  margin-left: 8px;
   background-color: orange;
 }

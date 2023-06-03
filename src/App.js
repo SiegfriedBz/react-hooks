@@ -26,7 +26,7 @@ function App() {
       <button onClick={() => setOpen(true)}>Open Modal</button>
       <button onClick={focusCloseBtn}>Focus ModalClose Btn</button>
       <button onClick={focusYesBtn}>Focus ModalYes Btn</button>
-      <button onClick={focusNoBtn}>Focus Modal Modal close</button>
+      <button onClick={focusNoBtn}>Focus ModalNo close</button>
 
       <Modal ref={modalRef} isOpen={open} handleClose={handleClose} />
     </div>
