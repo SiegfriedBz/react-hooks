@@ -1,24 +1,3 @@
 .App {
   text-align: center;
 }
-
-.modal-btn {
-  padding: 8px;
-}
-
-.modal-btn:focus {
-  padding: 16px;
-}
-
-#btnClose {
-  background-color: grey;
-}
-
-#btnYes {
-  background-color: green;
-}
-
-#btnNo {
-  margin-left: 8px;
-  background-color: orange;
-}
