@@ -1,7 +1,8 @@
 import { useState, useRef } from "react";
 import Modal from "./Modal";
-import { useLocalStorage } from "./useLocalStorage";
-import usePrevious from "./usePrevious"
+import { useLocalStorage } from "./hooks/useLocalStorage";
+import { usePrevious } from "./hooks/usePrevious"
+import { AsyncComponent } from "./AsyncComponent"
 import "./App.css";
 
 function App() {
@@ -30,6 +31,8 @@ function App() {
   };
 
   return (
+    <>
+    <AsyncComponent />
     <div className="App">
       <button onClick={() => setOpen(true)}>Open Modal</button>
       <button onClick={focusCloseBtn}>Focus ModalClose Btn</button>
@@ -38,6 +41,7 @@ function App() {
 
       <Modal ref={modalRef} isOpen={open} handleClose={handleClose} />
     </div>
+    </>
   );
 }
 
