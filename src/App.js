@@ -3,6 +3,8 @@ import Modal from "./Modal";
 import { useLocalStorage } from "./hooks/useLocalStorage";
 import { usePrevious } from "./hooks/usePrevious"
 import { AsyncComponent } from "./AsyncComponent"
+import { FetchComponent } from "./FetchComponent"
+
 import "./App.css";
 
 function App() {
@@ -33,6 +35,7 @@ function App() {
   return (
     <>
     <AsyncComponent />
+    <FetchComponent />
     <div className="App">
       <button onClick={() => setOpen(true)}>Open Modal</button>
       <button onClick={focusCloseBtn}>Focus ModalClose Btn</button>
