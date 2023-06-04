@@ -1,10 +1,15 @@
 import { useState, useRef } from "react";
 import Modal from "./Modal";
 import { useLocalStorage } from "./useLocalStorage";
+import usePrevious from "./usePrevious"
 import "./App.css";
 
 function App() {
   const [value, setValue] = useLocalStorage("name", "Sieg");
+
+  // 
+  const prevValue = usePrevious(value);
+  // 
 
   const [open, setOpen] = useState(false);
 
