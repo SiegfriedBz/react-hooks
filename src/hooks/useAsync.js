@@ -20,5 +20,5 @@ export function useAsync(callback, dependencies = []) {
         memoizedCallback()
     }, [memoizedCallback])
 
-    return [value, loading, error]
+    return { value, loading, error }
 }
